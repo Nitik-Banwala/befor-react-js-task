@@ -1,5 +1,5 @@
 
-
+/////////////////map//////////////////
 
 const numbers = [1, 2, 3, 4];
 
@@ -7,7 +7,7 @@ const doubled = numbers.map(num => num * 2);
 
 console.log(doubled);
 
-
+//////////////Filter://///////////////
 
 const nums = [1, 2, 3, 4, 5];
 
@@ -15,7 +15,7 @@ const oddNumbers = nums.filter(num => num % 2 !== 0);
 
 console.log(oddNumbers);
 
-
+//////////////////////Reduce:///////////
 
 const values = [1, 2, 3, 4, 5];
 
@@ -24,7 +24,7 @@ const sum = values.reduce((total, num) => total + num, 0);
 console.log(sum);
 
 
-
+////////////////////Find:///////////////
 
 const users = [
     { id: 1, name: 'A' },
@@ -37,6 +37,9 @@ console.log(user);
 
 
 
+//////////////////Object.keys:////////////////
+
+
 
 const obj = { a: 1, b: 2 };
 
@@ -46,7 +49,7 @@ console.log(keys);
 
 
 
-
+//////////////////Destructuring:///////////////
 
 
 
@@ -60,7 +63,7 @@ console.log(age);
 
 
 
-
+//////////////Spread Operator:////////////////
 
 
 const obj1 = { a: 1, b: 2 };
@@ -71,7 +74,7 @@ const mergedObj = { ...obj1, ...obj2 };
 console.log(mergedObj);
 
 
-
+///////////////Arrow Function://///////////////
 
 
 
@@ -79,7 +82,7 @@ const add = (a, b) => a + b;
 
 console.log(add(5, 3));
 
-
+////////////////Callback Function://///////
 
 
 
@@ -95,15 +98,14 @@ function myCallback() {
 doSomething(myCallback);
 
 
-
-
+//////////////////Closure://////////////////
 
 doSomething(() => {
     console.log("Arrow callback called!");
 });
 
 
-
+//////////////////Promise://////////////////
 
 
 
@@ -117,6 +119,8 @@ myPromise.then(message => {
     console.log(message);
 });
 
+
+/////////////Async/Await://////////////
 
 
 
@@ -139,6 +143,8 @@ async function fetchData() {
 
 fetchData();
 
+////////////////Event Listener:////////////
+
 
 
 
@@ -148,5 +154,32 @@ button.addEventListener("click", () => {
     console.log("Button clicked!");
 });
 
+
+///////////////Event Binding://///////////
+
+
+// import React, { Component } from "react";
+
+// class ClickButton extends Component {
+//     constructor(props) {
+//         super(props);
+
+//         this.handleClick = this.handleClick.bind(this);
+//     }
+
+//     handleClick() {
+//         console.log("Clicked");
+//     }
+
+//     render() {
+//         return (
+//             <button onClick={this.handleClick}>
+//                 Click Me
+//             </button>
+//         );
+//     }
+// }
+
+// export default ClickButton;
 
 
